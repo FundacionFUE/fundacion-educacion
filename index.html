@@ -6,82 +6,94 @@
     <title>Fundación Unidos por la Educación</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #333; }
-        header { background-color: #b00030; padding: 20px; color: white; text-align: center; }
-        nav { text-align: center; background-color: #8b0025; padding: 10px 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .logo { width: 100px; display: block; margin: 0 auto 10px; }
-        .section { padding: 20px; max-width: 800px; margin: auto; }
-        .carousel { max-width: 600px; margin: auto; position: relative; }
-        .carousel img { width: 100%; display: none; }
-        .carousel img.active { display: block; }
-        footer { background-color: #8b0025; color: white; text-align: center; padding: 20px; }
-        .btn-wsp { display: inline-block; background: #25D366; color: white; padding: 10px 20px; border-radius: 5px; margin: 10px 0; text-decoration: none; font-weight: bold; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #333; }
+        header { background: #9b1c31; color: white; padding: 1em; text-align: center; }
+        nav { background: #e43f5a; display: flex; justify-content: center; gap: 1em; padding: 0.5em; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        .section { padding: 2em; }
+        .carousel img { max-width: 100%; height: auto; display: block; margin: auto; }
+        footer { background: #9b1c31; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+        .whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+        .whatsapp img { width: 60px; }
     </style>
 </head>
 <body>
     <header>
-        <img src="logotipo.png" alt="Logo Fundación" class="logo">
+        <img src="logotipo.png" alt="Logo" style="height: 80px;"><br>
         <h1>FUNDACIÓN UNIDOS POR LA EDUCACIÓN</h1>
+        <p>Los límites los pones tú</p>
     </header>
     <nav>
-        <a href="#">Inicio</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#oferta">Oferta Educativa</a>
+        <a href="#bachillerato">Bachillerato</a>
+        <a href="#licenciatura">Licenciatura</a>
+        <a href="#belleza">Belleza</a>
         <a href="#contacto">Contacto</a>
-        <a href="#inscripcion">Inscripción</a>
-        <a href="#galeria">Galería</a>
     </nav>
+
     <div class="section" id="nosotros">
-        <h2>Bienvenido</h2>
-        <p>Transforma tu vida con educación de calidad. Aprende con nosotros desde casa o de forma presencial.</p>
-        <h3>Nosotros</h3>
-        <p>Somos una fundación dedicada a brindar oportunidades educativas accesibles, con programas oficiales y personalizados.</p>
+        <h2>Nosotros</h2>
+        <p>Ofrecemos educación de calidad en diversas áreas como Bachillerato, Licenciaturas y cursos de Belleza con validez oficial.</p>
     </div>
-    <div class="section" id="oferta">
-        <h2>Oferta Educativa</h2>
-        <ul>
-            <li>Bachillerato en 4 meses</li>
-            <li>Licenciaturas en Derecho, Pedagogía, Psicología y Administración</li>
-            <li>Cuidador Domiciliario, Belleza (uñas, pestañas, microblading)</li>
-        </ul>
-    </div>
-    <div class="section" id="galeria">
-        <h2>Galería</h2>
+
+    <div class="section" id="bachillerato">
+        <h2>Bachillerato</h2>
+        <p>Con validez oficial bajo el Acuerdo 286, estudia tu bachillerato en tan solo 4 meses.</p>
         <div class="carousel">
-            <img src="foto1.jpg" class="active" alt="Foto 1">
-            <img src="foto2.jpg" alt="Foto 2">
-            <img src="foto3.jpg" alt="Foto 3">
+            <img src="foto1.jpg" alt="Foto Bachillerato">
         </div>
     </div>
+
+    <div class="section" id="licenciatura">
+        <h2>Licenciaturas</h2>
+        <p>Modalidad en línea o presencial. Derecho, Pedagogía, Psicología y Administración. Validez oficial Acuerdo 286.</p>
+        <div class="carousel">
+            <img src="foto2.jpg" alt="Foto Licenciatura">
+        </div>
+    </div>
+
+    <div class="section" id="belleza">
+        <h2>Área de Belleza</h2>
+        <p>Conoce nuestros cursos especializados y transforma tu pasión en una profesión:</p>
+        <h3>💅 Uñas Acrílicas</h3>
+        <p><strong>Misión:</strong> Impulsar el desarrollo de habilidades prácticas y creativas en el diseño y aplicación de uñas acrílicas, promoviendo el crecimiento profesional con altos estándares de calidad y responsabilidad.</p>
+        <p><strong>Visión:</strong> Ser un referente en la formación de expertas en uñas acrílicas, destacando por la innovación, precisión técnica y el impulso al emprendimiento femenino en el área de la belleza.</p>
+
+        <h3>✒️ Microblading</h3>
+        <p><strong>Misión:</strong> Capacitar a nuestros estudiantes en la técnica de microblading con enfoque en la seguridad, la estética personalizada y la ética profesional, garantizando resultados naturales y de alta calidad.</p>
+        <p><strong>Visión:</strong> Formar especialistas en microblading altamente capacitados, reconocidos por su profesionalismo, responsabilidad y compromiso con la mejora continua en el sector de la estética facial.</p>
+
+        <h3>👁️ Extensión de Pestañas</h3>
+        <p><strong>Misión:</strong> Ofrecer una enseñanza especializada en aplicación y diseño de extensiones de pestañas, priorizando la salud ocular, la armonía estética y la excelencia en el servicio al cliente.</p>
+        <p><strong>Visión:</strong> Consolidarnos como una institución líder en formación de técnicas en pestañas, con egresadas preparadas para emprender, innovar y destacar en el mundo de la belleza.</p>
+    
+        <h2>Área de Belleza</h2>
+        <p>Microblading, uñas, pestañas. Formación práctica con misión de profesionalizar tu vocación.</p>
+        <div class="carousel">
+            <img src="foto3.jpg" alt="Foto Belleza">
+        </div>
+    </div>
+
     <div class="section" id="contacto">
         <h2>Contacto</h2>
-        <p><strong>Teléfono:</strong> 55 89 35 17 83</p>
-        <p><strong>WhatsApp:</strong> <a class="btn-wsp" href="https://wa.me/5560624287" target="_blank">Escríbenos por WhatsApp</a></p>
-        <p><strong>Email:</strong> contacto@fundacionfue.mx</p>
-        <p><strong>Dirección:</strong> Avenida Cuauhtémoc Oriente #6, 1er piso, Chalco Centro, C.P. 56600</p>
+        <p>Ubicación: Avenida Cuauhtémoc Oriente, número 6, primer piso, C.P. 56600, Colonia Chalco Centro, Municipio Chalco de Díaz Covarrubias</p>
+        <p>Teléfono: 55 89 35 17 83 | WhatsApp: 55 60 62 42 87</p>
+        <p>Horario: Lunes a Sábado de 9:00 a 18:00 hrs</p>
+        <p>Email: contacto@fundacionfue.mx</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdy1eKHOYNnlePUaWJY7AemOX4g4ZJ3_JpRM35lN7sO9l5dKQ/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     </div>
-    <div class="section" id="inscripcion">
-        <h2>Formulario de Inscripción</h2>
-        <form action="https://formsubmit.co/contacto@fundacionfue.mx" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre completo" required><br><br>
-            <input type="email" name="email" placeholder="Correo electrónico" required><br><br>
-            <input type="text" name="telefono" placeholder="Teléfono" required><br><br>
-            <textarea name="mensaje" placeholder="Mensaje o curso de interés" rows="4" required></textarea><br><br>
-            <button type="submit">Enviar inscripción</button>
-        </form>
-    </div>
+
     <footer>
-        Fundación Unidos por la Educación © 2025 | Sitio oficial .MX
+        <p>&copy; 2025 Fundación Unidos por la Educación</p>
+        <p>Síguenos:
+            <a href="https://www.facebook.com/Fundación-Unidos-por-la-Educación" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/fue108_" target="_blank">Instagram</a> |
+            <a href="https://www.tiktok.com/@fue108_" target="_blank">TikTok</a>
+        </p>
     </footer>
-    <script>
-        let i = 0;
-        const images = document.querySelectorAll('.carousel img');
-        setInterval(() => {
-            images[i].classList.remove('active');
-            i = (i + 1) % images.length;
-            images[i].classList.add('active');
-        }, 3000);
-    </script>
+
+    <a href="https://wa.me/5560624287" class="whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
 </body>
 </html>
