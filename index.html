@@ -1,66 +1,128 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Fundación Unidos por la Educación</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; background: #fdf8f2; }
-    header { background: #800020; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
-    section { padding: 60px 20px; }
-    .gold { color: goldenrod; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Fundación Unidos por la Educación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+        }
+        header {
+            background-color: #800000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #b30000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>FUNDACIÓN UNIDOS POR LA EDUCACIÓN</h1>
-  <nav>
+    <h1>FUNDACIÓN UNIDOS POR LA EDUCACIÓN</h1>
+</header>
+
+<nav>
     <a href="#inicio">Inicio</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#oferta">Oferta Educativa</a>
     <a href="#contacto">Contacto</a>
-    <a href="#formulario">Inscripción</a>
+    <a href="#inscripcion">Inscripción</a>
     <a href="#galeria">Galería</a>
-  </nav>
-</header>
+</nav>
 
 <section id="inicio">
-  <h2>Bienvenido</h2>
-  <p>Transforma tu vida con educación de calidad. Aprende con nosotros desde casa o de forma presencial.</p>
+    <h2>Bienvenido</h2>
+    <p>Transforma tu vida con educación de calidad. Aprende con nosotros desde casa o de forma presencial.</p>
 </section>
 
 <section id="nosotros">
-  <h2>Nosotros</h2>
-  <p>Somos una fundación dedicada a brindar oportunidades educativas accesibles, con programas oficiales y personalizados.</p>
+    <h2>Nosotros</h2>
+    <p>Somos una fundación dedicada a brindar oportunidades educativas accesibles, con programas oficiales y personalizados.</p>
 </section>
 
 <section id="oferta">
-  <h2>Oferta Educativa</h2>
-  <ul>
-    <li>Bachillerato en 4 meses</li>
-    <li>Licenciaturas: Derecho, Pedagogía, Psicología, Administración</li>
-    <li>Cursos de Belleza: Uñas, Pestañas, Microblading</li>
-    <li>Curso de Cuidador Domiciliario</li>
-  </ul>
+    <h2>Oferta Educativa</h2>
+    <ul>
+        <li>Bachillerato en 4 meses</li>
+        <li>Licenciaturas: Derecho, Pedagogía, Psicología, Administración</li>
+        <li>Cursos de Belleza: Uñas, Pestañas, Microblading</li>
+        <li>Curso de Cuidador Domiciliario</li>
+    </ul>
 </section>
 
 <section id="contacto">
-  <h2>Contacto</h2>
-  <p>📍 Avenida Cuauhtémoc Oriente, 6, Chalco Centro, Chalco de Díaz Covarrubias, C.P. 56600</p>
-  <p>📞 Tel: 55 89 35 17 83 | WhatsApp: 55 60 62 42 87</p>
-  <p>Facebook: Fundación Unidos por la Educación | Instagram & TikTok: @fue108_</p>
+    <h2>Contacto</h2>
+    <p>📍 Avenida Cuauhtémoc Oriente, número 6, primer piso, Col. Chalco Centro, C.P. 56600<br>
+    ☎️ Teléfono fijo: 55 89 35 17 83<br>
+    📱 WhatsApp: 55 60 62 42 87</p>
 </section>
 
-<section id="formulario">
-  <h2>Solicita tu ficha <span class="gold">GRATIS</span></h2>
-  <p>Formulario de inscripción (nombre, teléfono, curso de interés...)</p>
+<section id="inscripcion">
+    <h2>Formulario de Inscripción</h2>
+    <form action="https://formsubmit.co/fundacionfue108@gmail.com" method="POST">
+        <label>Nombre completo:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Teléfono:</label><br>
+        <input type="tel" name="telefono" required><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Programa de interés:</label><br>
+        <select name="programa" required>
+            <option value="Bachillerato">Bachillerato en 4 meses</option>
+            <option value="Licenciatura">Licenciaturas</option>
+            <option value="Belleza">Cursos de Belleza</option>
+            <option value="Cuidador">Cuidador Domiciliario</option>
+        </select><br><br>
+
+        <button type="submit">Enviar inscripción</button>
+    </form>
 </section>
 
 <section id="galeria">
-  <h2>Galería</h2>
-  <p>(Aquí irán fotos de alumnos, eventos, certificados y testimonios.)</p>
+    <h2>Galería</h2>
+    <p>Próximamente imágenes de nuestras clases y eventos.</p>
 </section>
+
+<footer>
+    <p>Síguenos en:
+        <a href="https://www.facebook.com/Fundación-Unidos-por-la-Educación" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/fue108_" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@fue108_" target="_blank">TikTok</a>
+    </p>
+</footer>
+
+<a href="https://wa.me/5560624287" 
+   style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;" 
+   target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+         alt="WhatsApp" width="50" height="50">
+</a>
 
 </body>
 </html>
